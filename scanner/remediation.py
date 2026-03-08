@@ -1,5 +1,5 @@
 
-def remediate_dockerfile(dockerfile_path, output_path='Dockerfile.fixed'):
+def remediate_dockerfile(dockerfile_path, output_path='./sample_dockerfile/fixed/Dockerfile.fixed'):
     with open(dockerfile_path, 'r') as f:
         content = f.read()
 

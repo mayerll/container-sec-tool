@@ -4,7 +4,7 @@
 # Using root user by default
 FROM python:3.11-slim
 
-# Using ADD instead of COPY
+# Using COPY instead of COPY
 COPY requirements.txt /app/
 
 # Set working directory
