@@ -1,0 +1,4 @@
+
+docker          # Python SDK for Docker (needed for image scanning)
+rich            # Pretty CLI output and tables
+pyyaml          # Optional: parsing Dockerfile or YAML configs
