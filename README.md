@@ -4,6 +4,21 @@ Overview
 
 This tool helps developers scan Dockerfiles or Docker images for common security issues and automatically apply safe remediations where possible. It provides a clear, developer-friendly interface and produces readable reports of findings and fixes.
 
+
+### Usage Examples
+
+# Scan Dockerfile
+python3 cli.py --dockerfile ./sample_dockerfile/origin/Dockerfile
+
+# Scan and remediate
+python3 cli.py --dockerfile ./sample_dockerfile/origin/Dockerfile --remediate
+
+# Dry-run (show fixes without applying)
+python3 cli.py --dockerfile ./sample_dockerfile/origin/Dockerfile --remediate --dry-run
+
+# Save report as JSON
+python3 cli.py --dockerfile ./sample_dockerfile/origin/Dockerfile --json-report report.json
+
 Features
 
 Scan Dockerfiles or Docker images for security issues
